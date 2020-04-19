@@ -31,7 +31,7 @@ const LogIn = (props) => {
     const createAccount = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:8000/api/users/login', {
+        fetch('/api/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
