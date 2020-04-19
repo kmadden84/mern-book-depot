@@ -29,7 +29,7 @@ if(!isProduction) {
 }
 
 //Configure Mongoose
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/passport-tutorial',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/passport-tutorial',
 { 
     useNewUrlParser: true,
     useUnifiedTopology: true
