@@ -33,7 +33,7 @@ const CreateAccount = (props) => {
     const createAccount = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:8000/api/users/', {
+        fetch('/api/users/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
