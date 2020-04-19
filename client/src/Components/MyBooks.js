@@ -17,7 +17,7 @@ const MyBooks = (props) => {
 
       console.log(id)
       console.log(token)
-      const url = 'http://localhost:8000/api/books/populate/' + id;
+      const url = '/api/books/populate/' + id;
       fetch(url, {
         method: 'get',
         headers: {
@@ -86,7 +86,7 @@ const MyBooks = (props) => {
       return false;
     }
 
-    fetch('http://localhost:8000/api/books/create/' + context.id, {
+    fetch('/api/books/create/' + context.id, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ const MyBooks = (props) => {
     if (verify == false) {
       return false;
     } else {
-    fetch('http://localhost:8000/api/books/delete/' + context.id, {
+    fetch('/api/books/delete/' + context.id, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
